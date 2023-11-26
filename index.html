@@ -15,36 +15,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-<header>
-        <div class="logo">
-                <img src="images/RR-removebg-preview.png">
-                <h2>aksFly<span>.</span></h2>
-        </div>
+	<header class="header">
+                <div class="name">
+                <img src="images/RR-removebg-preview.png" alt="">
+		<a href="#">aksFly</a>
+                </div>
 
-        <nav>
-        <ul>
-                <a href="#home"><li><i class="fa-solid fa-house"></i>Home</li></a>
-                <a href="#about"><li><i class="fa-solid fa-address-card"></i>About</li></a>
-                <a href="#contact"><li><i class="fa-solid fa-address-book"></i>Contact</li></a>
-        </ul>
-                </nav>
+		<input type="checkbox" id="check">
 
-</header>
+		<label for="check" class="menu">
+			<i class="bx bx-menu" id="icon-menu"><i class="fa-solid fa-bars" style="color: #000000;"></i></i>
+			<i class="bx bx-x" id="close-menu"><i class="fa-solid fa-xmark" style="color: #000000;"></i></i>
+		</label>
+
+		<nav class="navbar">
+			
+                <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+                <a href="#about"><i class="fa-solid fa-address-card"></i>About</a>
+                <a href="#service"><i class="fa-solid fa-address-book"></i>service</a>
+                <a href="#project"><i class="fa-solid fa-address-book"></i>Project</a>
+                <a href="#contact"><i class="fa-solid fa-address-book"></i>Contact</a>
+		</nav>
+	</header>
+
+<main>
 <div id="home"></div>
         <div class="home">       
         <h1>Hi There !!<br>
         I'm Rakha.</h1>
         <h2><span>I'am a student at wikrama</span> <br> vocational high school bogor.</h2>
-        <button><a href="#">Call Me</a></button>
+        <button><a href="Black and White Simple Visual Artist Resume.pdf" download="CV Muhammad Rakha Saputra"><i class="fa-solid fa-download fa-lg" style="color: #000000;"></i>Download CV</a></button>
         </div>
-<main>
+</main>
+<article>
         
 <div id="about"></div> 
 <div class="card">
-        <div class="photo">
-                <img src="https://i.pinimg.com/564x/f9/32/e9/f932e9966d104e0f494dc202e64c3387.jpg" alt="">
-        </div>
-        <div class="lkll">
+                <img src="https://i.pinimg.com/564x/f9/32/e9/f932e9966d104e0f494dc202e64c3387.jpg" alt=""> <br>
         <h2>Education</h2> <br>
         <h3>MI Annajah <br>
         2014 - 2019 <br> <br>
@@ -53,9 +60,8 @@
         Smk Wikrama <br>
         2023 - 2025 
         </h3>
-        </div>
 </div>
-        <div class="main"</div>
+        <div class="bungkus">
         <h1>About Me</h1>
         <b>
         Hello Let me introduce myself <br>
@@ -65,24 +71,66 @@
         My hobbies are playing games and reading books <br>
         that's all and thank you.<br></b>
 </div>
-</main> 
+</article> 
 
 
 <section>
-<div class="skills">
-        <img src="https://i.pinimg.com/564x/ee/b3/5d/eeb35df1a6739f4cea43ed1cba70bc25.jpg" alt="">
-        <img src="https://i.pinimg.com/564x/ce/45/5f/ce455f4e7d741fb85eb763cbbdf9e43f.jpg" alt="">
-        <img src="https://i.pinimg.com/564x/69/e2/b3/69e2b3be6001c33141a95557a5f2cbcd.jpg" alt="">
+        <div id="service"></div>
+<div class="container">
+        <div class="services">
+        <h1>service</h1>
+        </div>
+        <div class="box">
+        <div class="service1">
+        <i class="fa-solid fa-ghost fa-2xl" style="color: #000000;"></i> <br><br>
+        <h2>UI & UX</h2><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti atque molestias delectus vel, eos eius magnam nemo voluptatum exercitationem? Facere accusamus, ex porro perspiciatis tempora hic dolor sit neque dicta.</p>
 </div>
+<div class="service1">
+        <<i class="fa-solid fa-cloud fa-2xl" style="color: #000000;"></i><br><br>
+        <h2>Design</h2><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti atque molestias delectus vel, eos eius magnam nemo voluptatum exercitationem? Facere accusamus, ex porro perspiciatis tempora hic dolor sit neque dicta.</p>
+</div>
+<div class="service1">
+        <i class="fa-solid fa-newspaper fa-2xl" style="color: #000000;"></i><br><br>
+        <h2>Editing</h2><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti atque molestias delectus vel, eos eius magnam nemo voluptatum exercitationem? Facere accusamus, ex porro perspiciatis tempora hic dolor sit neque dicta.</p>
+</div>
+<div class="service1">
+        <i class="fa-solid fa-mug-hot fa-2xl" style="color: #000000;"></i> <br><br>
+        <h2>Developer</h2><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti atque molestias delectus vel, eos eius magnam nemo voluptatum exercitationem? Facere accusamus, ex porro perspiciatis tempora hic dolor sit neque dicta.</p>
+</div>
+
+        </div>
 </section>
 
 
 <footer>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2DD4E7" fill-opacity="1" d="M0,128L20,160C40,192,80,256,120,256C160,256,200,192,240,170.7C280,149,320,171,360,197.3C400,224,440,256,480,224C520,192,560,96,600,101.3C640,107,680,213,720,245.3C760,277,800,235,840,197.3C880,160,920,128,960,101.3C1000,75,1040,53,1080,69.3C1120,85,1160,139,1200,144C1240,149,1280,107,1320,122.7C1360,139,1400,213,1420,250.7L1440,288L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg>
 <div id="contact"></div>
-        <div class="section"</div>
-        <h1>Contact</h1>
-        <a href="https://www.instagram.com/rakha_505/">instagram</a>
+<div class="bersatu">
+        <div class="bagian">
+        <h1>Find Me On</h1>
+        </div>
+        <div class="wadahsatu">
+        <div class="wadah">
+        <a href="https://www.tiktok.com/@raks.fly"><i class="fa-brands fa-tiktok fa-bounce fa-xl" style="color: #000000;"></i></a>
+                        </div>
+        <div class="wadah">
+                <a href="https://www.instagram.com/rakha_505/"><i class="fa-brands fa-instagram fa-bounce fa-xl" style="color: #000000;"></i></a>
+                        </div>
+                <div class="wadah">
+                <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fa-bounce fa-xl" style="color: #000000;"></i></a>
+                        </div>
+                        <div class="wadah">
+                <a href="https://www.instagram.com/rakha_505/"><i class="fa-brands fa-telegram fa-bounce fa-xl" style="color: #000000;"></i></a>
+                        </div>
+                        <div class="wadah">
+                        <a href="https://www.instagram.com/rakha_505/"><i class="fa-brands fa-github fa-bounce fa-xl" style="color: #000000;"></i></a>
+                </div>
+        </div>        
+</div>
 </footer>
 </div>
 </body>

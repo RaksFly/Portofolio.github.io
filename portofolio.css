@@ -7,69 +7,92 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
-    height: 50px;
-    width: 80%;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    gap: 15rem;
-    margin-top: 15px;
-    margin-left: 165px;
-
-} 
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 70px;
+	display: flex;
+	align-items: center;
+    gap: 80px;
+	z-index: 100;
+	background: transparent;
 }
 
-ul {
-    display: flex;
-    gap: 8rem;
-    list-style: none;
-    font-size:1.3rem ;
-    font-family: 'Kanit';
-    margin-right: 150px;
+.header img {
+    width: 100px;
+    height: 100px;
+    
 }
 
-li {
-    color: black;
+.header:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
 }
 
-a {
-    text-decoration: none;
-}
-
-.logo {
+.name {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 100px;
+    margin-left: 20px;
 }
 
-.logo img{
-    width: 80px;
-    height: 80px;
-}
-
-.logo h2 {
+.name a {
+	font-size: 2rem;
+	color: black;
+	text-decoration: none;
     font-family: 'Quicksand';
 }
 
-.home {
+.navbar  a {
+    margin-left: 6rem;
+	font-size: 1.3rem;
+	color: black;
+    font-family: 'Kanit';
+	text-decoration: none;
+	transition: .50s ease;
+}
+
+.navbar a:hover {
+	padding-right: 10px;
+}
+
+#check {
+	display: none;
+}
+
+.menu {
+	position: absolute;
+	right: 15%;
+	color: white;
+	font-size: 2rem;
+	cursor: pointer;
+	display: none;
+}
+
+main {
     height: 53rem;
-    width: auto;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://i.pinimg.com/564x/ac/32/40/ac32405cdd2f238a61709713d6d43f02.jpg);
+    background-size: cover;
+    background-position: center;
+    Background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+
+.home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(https://i.pinimg.com/564x/ac/32/40/ac32405cdd2f238a61709713d6d43f02.jpg);
-    background-size: cover;
-    background-position: 0;
-    Background-attachment:fixed;
-    background-repeat: no-repeat;
+    text-align: center;
 }
 
 .home h1 {
@@ -84,17 +107,17 @@ a {
     font-size: 60px;
 }
 
+
 .home span {
     font-size: 60px;
-    margin-left: 50px;
 }
 
 button {
     background-color: rgb(47, 191, 210);
     border: none;
+    margin-top: 30px;
     padding: 10px 30px;
     border-radius: 16px;
-    transition: all 0.3s;
 }
 
 .home a {
@@ -103,27 +126,30 @@ button {
     font-size: 20px;
 }
 
-main {
-    height: 750px;
+article {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    height: 700px;
     background: linear-gradient(55deg, #30bbb2 0%, #29d8ec 51%, #2cb5e8 85%);
     background-repeat: no-repeat;
 }
 
-.main {
-    margin-top: 90px;
-    margin-right: 80px;
+.bungkus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.main h1 {
+.bungkus h1 {
     font-size: 55px;
     margin-bottom: 75px;
+    font-family: 'Cabin';
 }
 
-.main b {
+.bungkus b {
     font-size: 200%;
     color: white;
+    font-family: 'Roboto';
 }
 
 .card {
@@ -135,43 +161,74 @@ main {
     border-radius: 20px;
     width: 400px;
     height: 500px;
-    margin-right: 220px;
     margin-top: 98px;
     box-shadow: 0 0  10px black;
 }
 
 .card img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 100px;
 }
 
-.lkll {
+
+section {
+    height: 580px;
+    background-color: rgb(45, 212, 231);
+}
+
+.box {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 100px;
+}
+
+.services {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main h1 {
-    font-family: 'Cabin';
-}
-
-.main b {
+.services h1 {
+    font-size: 55px;
     font-family: 'Roboto';
 }
 
-section {
+.service1 {
     display: flex;
-    height: 500px;
-    background-color: rgb(45, 212, 231);
-}
-
-.skills {
-    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    box-shadow: 0px  0px  10px black;
 }
 
 footer {
     height: 500px;
 } 
+
+.bagian {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bagian h1 {
+    font-size: 30px;
+    font-family: 'Roboto';
+}
+
+.wadahsatu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    gap: 30px;
+
+}
 
